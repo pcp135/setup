@@ -44,3 +44,10 @@ ln -sf dotfiles/.emacs.d .
 # Install the heroku toolbelt
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
+# Generate new key with no passphrase
+ssh-keygen -t rsa -f ~/.ssh/id_rsa -N ''
+
+#Now login to heroku and add keys
+heroku login
+heroku keys:add
+
