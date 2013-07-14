@@ -52,3 +52,6 @@ ssh-keygen -t rsa -f ~/.ssh/id_rsa -N ''
 heroku login
 heroku keys:add
 
+# Set names up on git
+git config --global user.name "Phil Parsons"
+git config --global user.email phil@parsons.uk.com
